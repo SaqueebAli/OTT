@@ -24,10 +24,10 @@ public class OTTVideoplaybackTest extends BaseClass {
 
 	
 		GmailLogin gmailLogin=new GmailLogin(driver);
-		gmailLogin.getUsername().sendKeys("teest3600@gmail.com");
+		gmailLogin.getUsername().sendKeys(<user-email>);
 		gmailLogin.getNext().click();
 		Wait.visibilityOf(driver,gmailLogin.getPassword());
-		gmailLogin.getPassword().sendKeys("360@Logica");
+		gmailLogin.getPassword().sendKeys(<email password>);
 		gmailLogin.getNext().click();
 		driver.navigate().to("https://www.zee5.com/");
 		Thread.sleep(10000);
